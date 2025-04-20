@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.innerHTML += html; // ✅ Direct usage — no getElement needed
+      });
+  </script>
+  <body style="background-color: #eef3f3">
+    <!-- navbar sectio start -->
+    <div id="navbar" style="position: sticky; top: 0px; z-index: 1000"></div>
+    <!-- navbar section end  -->
+
+    <!-- Banner Secetion Start -->
+
+    <div class="banner-img">
+      <div class="text-center" style="padding-top: 80px">
+        <h2 class="text-white">Multi Page Website</h2>
+        <a class="fs-5 text-decoration-none text-secondary" href="index.html">
+          Home</a
+        >&nbsp;&nbsp;<i class="text-secondary fa-solid fa-arrow-right"></i>
+        <a class="fs-5 text-decoration-none text-secondary" href="#">
+          Multi Page Website</a
+        >
+      </div>
+    </div>
+
+    <!-- Banner Secetion Start -->
+    <div class="container" style="padding: 70px 0px">
+      <div class="row">
+        <!-- service aside start -->
+        <div class="col-sm-4" id="service-aside"></div>
+        <!-- service aside end -->
+
+        <div class="col-sm-8">
+          <h2>Multi Page Website Development</h2>
+          <div class="mt-4">
+            <img src="./image/multi-page.png" class="img-fluid w-100" alt="" />
+          </div>
+          <div class="mt-5">
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+              </div>
+              <div class="ms-2">
+                <p>
+                  Multi-page websites are ideal for businesses or projects that
+                  require separate, dedicated pages for different types of
+                  content. I specialize in building well-structured,
+                  SEO-friendly multi-page websites that offer smooth navigation
+                  and clear content flow.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+              </div>
+              <div class="ms-2">
+                <p>
+                  Each page is carefully designed and optimized — whether it’s
+                  the Home, About, Services, or Contact page — ensuring
+                  consistency in design and user experience across the site.
+                  This type of website is perfect for presenting detailed
+                  information in an organized way.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+              </div>
+              <div class="ms-2">
+                <p>
+                  From static websites to dynamic multi-page platforms, I ensure
+                  every page is fast-loading, responsive, and accessible on all
+                  devices. Whether it’s a portfolio, corporate site, or
+                  service-based business, I can create a solution tailored to
+                  your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section End -->
+
+    <!-- footer sectio start -->
+    <footer style="padding: 85px 0px 0px 0px" id="footer"></footer>
+    <!-- footer sectio start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

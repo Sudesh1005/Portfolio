@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.innerHTML += html; // ✅ Direct usage — no getElement needed
+      });
+  </script>
+  <body>
+    <!-- navbar sectio start -->
+    <div id="navbar" style="position: sticky; top: 0px; z-index: 1000"></div>
+    <!-- navbar section end  -->
+
+    <!-- banner Section Start -->
+    <div class="banner-img">
+      <div class="text-center" style="padding-top: 80px">
+        <h2 class="text-white">Contact</h2>
+        <a class="fs-5 text-decoration-none text-secondary" href="index.html">
+          Home</a
+        >&nbsp;&nbsp;<i class="text-secondary fa-solid fa-arrow-right"></i>
+        <a class="fs-5 text-decoration-none text-secondary" href="#">
+          Contact</a
+        >
+      </div>
+    </div>
+
+    <!-- banner Section End -->
+    <!-- form section Start -->
+    <section class="" style="background-color: #f7efef; padding: 85px 0px">
+      <div class="container">
+        <h2 class="text-center" style="color: #07bdfd">Get in Touch</h2>
+        <p class="text-center pb-5">
+          Interested in working together or hiring me? Drop a message below 👇
+        </p>
+        <div class="row">
+          <div class="col-sm-6 pe-md-0">
+            <div class="card p-5 border-0 shadow">
+              <form class="" onsubmit="sendToWhatsApp(); return false;">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="company" class="form-label">Company Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="company"
+                    name="company"
+                    placeholder="Optional"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Optional"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="How can I help you?"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn fw-bold text-white"
+                  style="background-color: #07bdfd"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-6 ps-md-0">
+            <img
+              class="img-fluid w-100 h-100"
+              src="./image/cartoon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- form section End -->
+
+    <!-- map Section start -->
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d775.3339196234812!2d78.97452064241081!3d10.427091560283177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1745149477380!5m2!1sen!2sin"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- mapsection End -->
+    <!-- footer sectio start -->
+    <footer style="padding: 85px 0px 0px 0px" id="footer"></footer>
+    <!-- footer sectio start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

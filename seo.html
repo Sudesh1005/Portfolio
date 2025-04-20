@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.innerHTML += html; // ✅ Direct usage — no getElement needed
+      });
+  </script>
+  <body style="background-color: #eef3f3">
+    <!-- navbar sectio start -->
+    <div id="navbar" style="position: sticky; top: 0px; z-index: 1000"></div>
+    <!-- navbar section end  -->
+
+    <!-- Banner Secetion Start -->
+
+    <div class="banner-img">
+      <div class="text-center" style="padding-top: 80px">
+        <h2 class="text-white">SEO</h2>
+        <a class="fs-5 text-decoration-none text-secondary" href="index.html">
+          Home</a
+        >&nbsp;&nbsp;<i class="text-secondary fa-solid fa-arrow-right"></i>
+        <a class="fs-5 text-decoration-none text-secondary" href="#"> SEO</a>
+      </div>
+    </div>
+
+    <!-- Banner Secetion Start -->
+    <div class="container" style="padding: 70px 0px">
+      <div class="row">
+        <!-- service aside start -->
+        <div class="col-sm-4" id="service-aside"></div>
+        <!-- service aside end -->
+
+        <div class="col-sm-8">
+          <h2>Search Engine Optimization (SEO)</h2>
+          <div class="mt-4">
+            <img src="./image/seo.png"  class="img-fluid w-100" alt="" />
+          </div>
+          <div class="mt-5">
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+              </div>
+              <div class="ms-2">
+                <p>
+                  SEO (Search Engine Optimization) is all about improving a
+                  website’s visibility in search engine results. I implement SEO
+                  best practices to ensure your website is easily discoverable
+                  by users searching for your services or content online.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+              </div>
+              <div class="ms-2">
+                <p>
+                  From optimizing meta tags, headings, and URLs to ensuring fast
+                  load times and mobile responsiveness, I build websites with
+                  SEO in mind right from the start. I also focus on clean,
+                  semantic HTML and structured content to enhance search engine
+                  crawling.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+              </div>
+              <div class="ms-2">
+                <p>
+                  Whether it’s a static website, a React SPA, or a dynamic
+                  Next.js app, I apply both on-page and technical SEO strategies
+                  to boost performance and ranking. Better SEO means more
+                  traffic, more engagement, and better results for your
+                  business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section End -->
+
+    <!-- footer sectio start -->
+    <footer style="padding: 85px 0px 0px 0px" id="footer"></footer>
+    <!-- footer sectio start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

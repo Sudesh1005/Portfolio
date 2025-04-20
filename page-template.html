@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.innerHTML += html; // ✅ Direct usage — no getElement needed
+      });
+  </script>
+  <body>
+    <!-- navbar sectio start -->
+    <div id="navbar" style="position: sticky; top: 0px; z-index: 1000"></div>
+    <!-- navbar section end  -->
+    <div class="banner-img" >
+        <div class="text-center" style="padding-top:80px;">
+            <h2 class="text-white">About Me</h2>
+            <a class="fs-5 text-decoration-none text-secondary" href="index.html">
+                Home</a>&nbsp;&nbsp;<i class="text-secondary fa-solid fa-arrow-right"></i> 
+                <a class="fs-5 text-decoration-none text-secondary" href="#">
+                    About</a>
+        </div>
+       
+    </div>
+    <!-- footer sectio start -->
+    <footer style="padding: 85px 0px 0px 0px" id="footer"></footer>
+    <!-- footer sectio start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

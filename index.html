@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.innerHTML += html; // ✅ Direct usage — no getElement needed
+      });
+  </script>
+  <body>
+    <div id="navbar" style="position: sticky; top: 0px; z-index: 1000"></div>
+
+    <!-- Hero Section Start -->
+    <section class="video-section">
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline class="bg-video" preload="auto">
+        <source src="./image/bg-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Foreground Content -->
+      <div class="container content-overlay">
+        <div class="row">
+          <div class="col-sm-6 bg-loptop mx-auto">
+            <div class="lapoto-content">
+              <h1 class="text-center mt-4" style="color: #07bdfd">
+                I am a Web Developer
+              </h1>
+              <p class="text-center text-white mt-3 laptop-para-content">
+                I design, build, and maintain awesome websites. <br />
+                Let’s turn your digital vision into reality.
+              </p>
+              <div class="text-center">
+                <a href="#" class="animation-btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  About More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="pb-5 about-section">
+      <div class="container">
+        <h2 class="pt-5 text-center" style="color: #07bdfd">About Me</h2>
+        <div class="row mt-5">
+          <div class="col-sm-6 pe-md-0">
+            <img
+              class="img-fluid w-100 h-100"
+              src="./image/my-img.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-6 ps-md-0 mt-4 mt-md-0">
+            <div
+              class="card p-4 border-0 shadow"
+              style="background-color: #dccfcf"
+            >
+              <!-- <h3 class="mb-3">I am Web developer</h3> -->
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      Hi there! I’m Sudesh, a passionate and creative web
+                      developer who loves building responsive and user-friendly
+                      websites. I enjoy turning ideas into digital experiences
+                      using technologies like HTML, CSS, JavaScript, and
+                      React.js.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      I have a background in Computer Science, and my journey
+                      into web development started during my college days. Since
+                      then, I’ve been constantly learning and improving my
+                      skills in both frontend and full-stack development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      I have a background in Computer Science, and my journey
+                      into web development started during my college days. Since
+                      then, I’ve been constantly learning and improving my
+                      skills in both frontend and full-stack development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      <b>Frontend : </b>HTML, CSS, JavaScript, Bootstrap,
+                      React.js
+                    </p>
+                    <p><b>Backend :</b> Node.js, Express.js, MongoDB</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex mt-3">
+                <a href="" class="about-sec-about-btn about-btn">About More</a>
+                <a href="" class="about-sec-call-btn about-btn">Contact Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start  -->
+    <section class="pb-5">
+      <div class="container">
+        <h2 class="pt-5 text-center" style="color: #07bdfd">Portfolio</h2>
+        <div class="row mt-5">
+          <div class="col-sm-7">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+              labore eveniet quo sed veniam, suscipit, officia maxime dicta
+              incidunt exercitationem
+            </p>
+          </div>
+          <div class="col-sm-5 text-end">
+            <a class="portfolio-more" href=""> More Portfolio</a>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div
+              class="mt-3 mt-md-3 card shadow border-0 p-3"
+              style="background: #f7efef"
+            >
+              <img
+                class="img-fluid w-100"
+                src="./image/portfolio-1.png"
+                alt=""
+              />
+              <div class="p-2 text-center">
+                <h3 class="mt-3">Nimatooz Academy</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                  voluptatibus?
+                </p>
+                <a href="" class="Preview-btn">Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div
+              class="mt-3 mt-md-3 card shadow border-0 p-3"
+              style="background: #f7efef"
+            >
+              <img
+                class="img-fluid w-100"
+                src="./image/portfolio-2.png"
+                alt=""
+              />
+              <div class="p-2 text-center">
+                <h3 class="mt-3">Kseed</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                  voluptatibus?
+                </p>
+                <a href="" class="Preview-btn">Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div
+              class="mt-3 mt-md-3 card shadow border-0 p-3"
+              style="background: #f7efef"
+            >
+              <img
+                class="img-fluid w-100"
+                src="./image/portfolio-3.png"
+                alt=""
+              />
+              <div class="p-2 text-center">
+                <h3 class="mt-3">Nimatooz Singapore</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                  voluptatibus?
+                </p>
+                <a href="" class="Preview-btn">Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div
+              class="mt-3 card shadow border-0 p-3"
+              style="background: #f7efef"
+            >
+              <img
+                class="img-fluid w-100"
+                src="./image/portfolio-4.png"
+                alt=""
+              />
+              <div class="p-2 text-center">
+                <h3 class="mt-3">VMG Electrical</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                  voluptatibus?
+                </p>
+                <a href="" class="Preview-btn">Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div
+              class="mt-3 card shadow border-0 p-3"
+              style="background: #f7efef"
+            >
+              <img
+                class="img-fluid w-100"
+                src="./image/portfolio-5.png"
+                alt=""
+              />
+              <div class="p-2 text-center">
+                <h3 class="mt-3">Lotus Electrical</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                  voluptatibus?
+                </p>
+                <a href="" class="Preview-btn">Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div
+              class="mt-3 card shadow border-0 p-3"
+              style="background: #f7efef"
+            >
+              <img
+                class="img-fluid w-100"
+                src="./image/portfolio-6.png"
+                alt=""
+              />
+              <div class="p-2 text-center">
+                <h3 class="mt-3">SG Seer</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                  voluptatibus?
+                </p>
+                <a href="" class="Preview-btn">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PortFolio Section End -->
+
+    <!-- form section Start -->
+    <section class="" style="background-color: #f7efef; padding: 85px 0px">
+      <div class="container">
+        <h2 class="text-center" style="color: #07bdfd">Get in Touch</h2>
+        <p class="text-center pb-5">
+          Interested in working together or hiring me? Drop a message below 👇
+        </p>
+        <div class="row">
+          <div class="col-sm-6 pe-md-0">
+            <div class="card p-5 border-0 shadow">
+              <form class="">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="company" class="form-label">Company Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="company"
+                    name="company"
+                    placeholder="Optional"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Optional"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="How can I help you?"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn fw-bold text-white"
+                  style="background-color: #07bdfd"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-6 ps-md-0">
+            <img
+              class="img-fluid w-100 h-100"
+              src="./image/cartoon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- form section End -->
+
+    <footer style="padding: 85px 0px 0px 0px" id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

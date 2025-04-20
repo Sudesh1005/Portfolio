@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.innerHTML += html; // ✅ Direct usage — no getElement needed
+      });
+  </script>
+  <body>
+    <!-- navbar sectio start -->
+    <div id="navbar" style="position: sticky; top: 0px; z-index: 1000"></div>
+    <!-- navbar section end  -->
+
+    <!-- banner section start -->
+    <div class="banner-img">
+      <div class="text-center" style="padding-top: 80px">
+        <h2 class="text-white">About Me</h2>
+        <a class="fs-5 text-decoration-none text-secondary" href="index.html">
+          Home</a
+        >&nbsp;&nbsp;<i class="text-secondary fa-solid fa-arrow-right"></i>
+        <a class="fs-5 text-decoration-none text-secondary" href="#"> About</a>
+      </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- About Section Start -->
+    <section class="about-section" style="padding: 80px 0px">
+      <div class="container">
+        <h2 class="text-center" style="color: #07bdfd">About Me</h2>
+        <div class="row mt-5">
+          <div class="col-sm-6 pe-md-0 mt-4 mt-md-0">
+            <div
+              class="card p-4 border-0 shadow"
+              style="background-color: #dccfcf"
+            >
+              <!-- <h3 class="mb-3">I am Web developer</h3> -->
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      Hi there! I’m Sudesh, a passionate and creative web
+                      developer who loves building responsive and user-friendly
+                      websites. I enjoy turning ideas into digital experiences
+                      using technologies like HTML, CSS, JavaScript, and
+                      React.js.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      I have a background in Computer Science, and my journey
+                      into web development started during my college days. Since
+                      then, I’ve been constantly learning and improving my
+                      skills in both frontend and full-stack development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      I have a background in Computer Science, and my journey
+                      into web development started during my college days. Since
+                      then, I’ve been constantly learning and improving my
+                      skills in both frontend and full-stack development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <div class="d-flex">
+                  <div>
+                    <i class="fa-solid fa-arrow-right arrow-icon mt-1"></i>
+                  </div>
+                  <div class="ms-2">
+                    <p>
+                      <b>Frontend : </b>HTML, CSS, JavaScript, Bootstrap,
+                      React.js
+                    </p>
+                    <p><b>Backend :</b> Node.js, Express.js, MongoDB</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex mt-3">
+                <a href="" class="about-sec-about-btn about-btn">About More</a>
+                <a href="" class="about-sec-call-btn about-btn">Contact Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 ps-md-0">
+            <img
+              class="img-fluid w-100 h-100"
+              src="./image/cartoon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+    <!-- timeline start -->
+    <div style="background-color: #e8e4e4;">
+      <div class="container">
+        <h2 class="text-center py-5">Education</h2>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>SSLC (2015-2016)</h3>
+              <p>GHS, Sampattividuthi</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>HSC (2017-2018)</h3>
+              <p>GBHSS, Kothamangalam</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>B.Sc-(CS) - (2018-2021)</h3>
+              <p>JJ College of Arts and Science(Autonomous), Sivapuram</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>M.Sc-(CS) - (2021-2023)</h3>
+              <p>H.H. The Rajah's College of Arts and Science, Pudukkottai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- timeline end -->
+      <div class="container">
+        <hr />
+      </div>
+      <!-- timeline start -->
+      <div class="container" style="padding-bottom: 70px;">
+        <h2 class="text-center py-5">Experience</h2>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Intern (2023 Jun - 2023 Aug)</h3>
+              <p>Propel Soft Trichy</p>
+            </div>
+          </div>
+          <div class="timeline-item"  style="margin-bottom: 0;">
+            <div class="timeline-content" 
+           >
+              <h3>Web Developer (2023 Sep - 2025 May)</h3>
+              <p>Nimatooz Smile Mobility, Aranthangi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- timeline end -->
+
+    <!-- footer sectio start -->
+    <footer style="padding: 85px 0px 0px 0px" id="footer"></footer>
+    <!-- footer sectio start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
