@@ -442,3 +442,6 @@ footer{
   background-color: #0dcaf0;
   color: white;
 }
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
